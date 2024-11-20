@@ -4,7 +4,7 @@ import { app } from '../../app';
 const createTicket = () => {
   return request(app).post('/api/tickets').set('Cookie', global.signin()).send({
     title: 'asldkf',
-    price: 20,
+    price: 50,
   });
 };
 
