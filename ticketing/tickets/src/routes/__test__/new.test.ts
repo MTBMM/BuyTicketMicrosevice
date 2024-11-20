@@ -30,7 +30,7 @@ it('returns an error if an invalid title is provided', async () => {
       title: '',
       price: 10,
     })
-    .expect(400);
+    .expect(600);
 
   await request(app)
     .post('/api/tickets')
@@ -38,7 +38,7 @@ it('returns an error if an invalid title is provided', async () => {
     .send({
       price: 10,
     })
-    .expect(400);
+    .expect(300);
 });
 
 it('returns an error if an invalid price is provided', async () => {
