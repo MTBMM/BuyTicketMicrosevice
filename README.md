@@ -45,7 +45,7 @@
 ## Technology Architecture
 ![image](https://github.com/user-attachments/assets/647c1fb9-3e23-4b3a-bd4a-56f3a0b65163)
 
-## Prerequisites
+## 🛠️Prerequisites
 What you need to run the project:
 - Make sure your machine has Docker installed
 - To monitor the project, you need install prometheus, granfana, Alermanager  on kubernetes: https://github.com/shazforiot/Monitoring-Kubernetes-with-Prometheus-Grafana/blob/main/Helm%20S
