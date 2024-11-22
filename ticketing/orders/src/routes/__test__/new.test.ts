@@ -32,14 +32,14 @@ it('returns an error if the ticket is already reserved', async () => {
     .post('/api/orders')
     .set('Cookie', global.signin())
     .send({ ticketId: ticket.id })
-    .expect(200);
+    .expect(400);
 
 });
 
 it('reserves a ticket', async () => {
   const ticket = Ticket.build({
     title: 'concert',
-    price: 20,
+    price: 50,
   });
   await ticket.save();
   console.log('reserves a ticket', ticket.id)
